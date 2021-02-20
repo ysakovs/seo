@@ -21,6 +21,10 @@ let notAvailable = [];
 
 io.on('connection', async socket => {
     // push current user in sockets
+      var socketId = socket.id;
+  var clientIp = socket.request.connection.remoteAddress;
+
+  console.log(clientIp);
     sockets.push(socket);
 
     // get all users
