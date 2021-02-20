@@ -128,7 +128,7 @@ io.on('connection', async socket => {
         const peer = notAvailable.find(user => user.id === peerId);
 
         // emit message back to client
-        peer.emit('strangerIsDoneTyping', msg);
+        peer.emit('strangerIsDoneTyping');
     
            
  
