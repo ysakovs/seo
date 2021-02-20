@@ -7,7 +7,7 @@ const app = express();
 // static folder
 app.use(express.static(__dirname + "/public"));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 const server = app.listen(PORT, () =>
   console.log(`Server has started on port ${PORT}`)
 );
