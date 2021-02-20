@@ -1,5 +1,12 @@
 // connect to main namespace
-const socket = io({transports: ['websocket'], upgrade: false});
+const socket = io.connect( 'https://omegle-clone-t4qm7.ondigitalocean.app/', {
+    transports: ['websocket'],
+    upgrade: false,
+    reconnection: true,
+    reconnectionDelay: 1000,
+    reconnectionDelayMax : 5000,
+    reconnectionAttempts: Infinity
+  } );
 
 
 
