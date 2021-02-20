@@ -1,5 +1,5 @@
 // connect to main namespace
-const socket = io.connect( 'http://127.0.0.1:8080', {
+const socket = io.connect( '/', {
     reconnection: true,
     reconnectionDelay: 1000,
     reconnectionDelayMax : 5000,
