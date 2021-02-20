@@ -108,6 +108,7 @@ io.on('connection', async socket => {
 
         // emit message back to client
         peer.emit('strangerIsTyping', msg);
+           peer.emit("strangerIsDoneTyping");
                                 
     });
     
