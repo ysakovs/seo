@@ -113,25 +113,7 @@ io.on('connection', async socket => {
     
     
     
-    
-    
-      socket.on("doneTyping", () => {
-    // get room
-    const roomName = [...socket.rooms][1];
 
-    // split ids
-    const ids = roomName.split("#");
-
-    // get peer id
-    const peerId = ids[0] === socket.id ? ids[1] : ids[0];
-
-    // get peer
-    const peer = notAvailable.find((user) => user.id === peerId);
-
-    // emit message back to client
-    peer.emit("strangerIsDoneTyping");
-  });
-    
     
     
     
