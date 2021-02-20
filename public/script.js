@@ -1,5 +1,5 @@
 // connect to main namespace
-const socket = io.connect( '/', {
+const socket = io.connect( 'https://holla-gjls3.ondigitalocean.app/', {
     transports: ['websocket'],
     upgrade: false,
     reconnection: true,
