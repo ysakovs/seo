@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://hola.lv/style.css">
+    <link rel="shortcut icon" href="https://hola.lv/img/favicon.png" />
+    <title>Hola.lv - Čats ar svešinieku</title>
+</head>
+<body>
+    <section class="navbar">
+        <img class="logo" src="https://hola.lv/img/logo.png" alt="logo">
+        <!---<h2 class="description">Talk to strangers!</h1>--->
+        <h2 class="online"></h2>
+    </section>
+
+    <main class="main">
+        <section class="conversation">
+         Esi sveicināts portālā <p style="color:#8f85b7;font-weight: bold;display: contents;">Hola!</p><br>
+
+Šis ir lielisks veids, kā satikt jaunus draugus.<br>
+
+Pēc nejaušības principa, mēs izvēlamies lietotāju un pievienojam to čatam ar tevi.<br>
+
+Lai viss būtu droši, čats ir anonīms, ja vien pats nevēlies atklāt kādas detaļas par sevi (nav ieteicams!),<br>
+
+kā arī čatu jūs varat pamest jebkurā laikā.<br>
+
+Ja nespēj būt pieklājīgs, lūdzu neizmanto šo portālu.<br>
+
+Spied uz <span style="color:#8f85b7;font-weight: bold;display: contents;">Sākt</span> pogas (apakšā) un izbaudi čatošanu!<br><br>
+Iepazīsties ar portāla <a href="./terms.html" style="color: #8f85b7;display: contents;" >lietošanas noteikumiem</a>.
+        </section>
+
+        <form class="form">
+            <button type="button" class="btn start bottom-left-radius" id="start">Sākt</button>
+            <button type="button" class="btn bottom-left-radius hide" id="stop">Beigt</button>
+            <button type="button" class="btn really bottom-left-radius bold hide" id="really">Tiešām?</button>
+            <textarea name="text" id="text" class="textarea" disabled></textarea>
+            <button type="submit" id="send" class="btn bottom-right-radius" disabled>Sūtīt</button>
+        </form>
+    </main>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-181216281-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-181216281-1');
+</script>
+    <script src='https://hola.lv/socket.io/socket.io.js'></script>
+    <script src='https://hola.lv/script.js'></script>
+</body>
+</html>
