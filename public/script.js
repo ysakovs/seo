@@ -1,5 +1,5 @@
 // connect to main namespace
-const socket = io("https://hola.lv/", {
+const socket = io("https://seo-qakof.ondigitalocean.app/", {
         'reconnection': true,
         'reconnectionDelay': 10000,
         'reconnectionDelayMax': 15000,
