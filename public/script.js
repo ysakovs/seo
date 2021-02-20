@@ -1,10 +1,5 @@
 // connect to main namespace
-const socket = io.connect( '/', {
-    reconnection: true,
-    reconnectionDelay: 1000,
-    reconnectionDelayMax : 5000,
-    reconnectionAttempts: Infinity
-  } );
+const socket = io({transports: ['websocket'], upgrade: false});
 
 
 
